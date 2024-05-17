@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/home"
+        android:icon="@drawable/home"
+        android:title="Home" />
+
+
+<!--    <item android:id="@+id/registered_users"-->
+<!--        android:icon="@drawable/u3"-->
+<!--        android:title="Registered Users"/>-->
+
+
+    <item android:id="@+id/add_t_place"
+        android:icon="@drawable/add1"
+        android:title="Add Tourist Place"/>
+
+    <item android:id="@+id/upload_excel"
+        android:icon="@drawable/tick"
+        android:title="Upload Excel File"/>
+
+<!--    <item android:id="@+id/view_t_place"-->
+<!--        android:icon="@drawable/view2"-->
+<!--        android:title="View Tourist Place"/>-->
+
+    <item android:id="@+id/logout"
+        android:icon="@drawable/logout"
+        android:title="Log out"/>
+
+</menu>

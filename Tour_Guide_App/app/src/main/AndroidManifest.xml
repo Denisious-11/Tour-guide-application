@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.tour_guide_app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Tour_Guide_App"
+        tools:targetApi="31">
+        <activity
+            android:name=".ShowRequest"
+            android:exported="false" />
+        <activity
+            android:name=".Request_Button"
+            android:exported="false" />
+        <activity
+            android:name=".Check_Request"
+            android:exported="false" />
+        <activity
+            android:name=".User_chat"
+            android:exported="false" />
+        <activity
+            android:name=".UsersList"
+            android:exported="false" />
+        <activity
+            android:name=".GiveRating"
+            android:exported="false" />
+        <activity
+            android:name=".GiveRatingtwo"
+            android:exported="false" />
+        <activity
+            android:name=".GeneratePlantwo"
+            android:exported="false" />
+        <activity
+            android:name=".GeneratePlantwolow"
+            android:exported="false" />
+        <activity
+            android:name=".GeneratePlanthree"
+            android:exported="false" />
+        <activity
+            android:name=".GeneratePlanfour"
+            android:exported="false" />
+        <activity
+            android:name=".GeneratePlan"
+            android:exported="false" />
+        <activity
+            android:name=".AddExcel"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyChoIiaLcRQETng39oiWTsfcfWks2ruZTg" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SearchPlace"
+            android:exported="false" />
+        <activity
+            android:name=".ViewPlaces"
+            android:exported="false" />
+        <activity
+            android:name=".AddPlaces"
+            android:exported="false" />
+        <activity
+            android:name=".GetUsers"
+            android:exported="false" />
+        <activity
+            android:name=".AdminHome"
+            android:exported="false" />
+        <activity
+            android:name=".UserHome"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterPage"
+            android:exported="false" />
+        <activity
+            android:name=".LoginPage"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

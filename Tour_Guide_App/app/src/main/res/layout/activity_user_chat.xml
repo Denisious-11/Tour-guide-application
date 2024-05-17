@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/mbg"
+    tools:context=".User_chat">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="550dp">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/usch_l"
+            android:layout_width="match_parent"
+            android:gravity="bottom"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"></androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/snd_ut"
+            android:layout_width="250dp"
+            android:layout_height="65dp"
+
+            android:background="@drawable/shape3"
+            android:textColor="@color/black"
+            android:ems="10"
+            android:layout_marginRight="10dp"
+            android:hint="type here"
+            android:inputType="textPersonName" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/snd_ub"
+            android:layout_width="106dp"
+            android:layout_height="63dp"
+            android:inputType="text"
+            android:background="@drawable/round3"
+            android:text="Send" />
+    </LinearLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_marginBottom="10dp"
+    app:ignore="NamespaceTypo">
+
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/card_view"
+        android:layout_marginTop="160dp"
+        android:layout_width="350dp"
+        android:paddingBottom="10dp"
+        card_view:cardBackgroundColor="@color/gwhite"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="6dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true">
+
+        <LinearLayout
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Travel Itinerary"
+                    android:textSize="26dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_height="30dp"/>
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="180dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/w2"
+                    android:scaleType="fitXY">
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="105dp"
+                    android:text="Start Date : "
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_height="30dp"/>
+
+
+                <TextView
+                    android:id="@+id/s_date"
+                    android:layout_width="150dp"
+                    android:text="start date"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_height="30dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="0dp">
+                <TextView
+                    android:layout_width="105dp"
+                    android:text="End Date : "
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:layout_height="30dp"/>
+
+
+                <TextView
+                    android:id="@+id/e_date"
+                    android:layout_width="150dp"
+                    android:text="End date"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_height="30dp"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imga"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:src="@drawable/dotted"
+                android:layerType="software" />
+            <TextView
+                android:layout_width="135dp"
+                android:text="Day 1 "
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_height="30dp"/>
+            <ImageView
+                android:id="@+id/imgb"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:src="@drawable/dotted"
+                android:layerType="software" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="135dp"
+                    android:text="Time "
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_height="30dp"/>
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:text="Activity"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_height="30dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="125dp"
+                    android:text="9:00 AM"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_height="30dp"/>
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:text="Breakfast"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_height="30dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="125dp"
+                    android:text="10:00 AM"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_height="30dp"/>
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="210dp"
+                    android:text="Breakfast"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="125dp"
+                    android:text="1:00 PM"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_height="30dp"/>
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:text="Lunch"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_height="30dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="125dp"
+                    android:text="2:30 PM"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_height="30dp"/>
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="210dp"
+                    android:text="Lunch"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgc"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:src="@drawable/dotted"
+                android:layerType="software" />
+            <TextView
+                android:layout_width="135dp"
+                android:text="Day 2 "
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_height="30dp"/>
+            <ImageView
+                android:id="@+id/imgd"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:src="@drawable/dotted"
+                android:layerType="software" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="135dp"
+                    android:text="Time "
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_height="30dp"/>
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:text="Activity"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_height="30dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="125dp"
+                    android:text="9:00 AM"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_height="30dp"/>
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:text="Breakfast"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_height="30dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="125dp"
+                    android:text="10:00 AM"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_height="30dp"/>
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="210dp"
+                    android:text="Breakfast"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="125dp"
+                    android:text="1:00 PM"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_height="30dp"/>
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:text="Lunch"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_height="30dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="125dp"
+                    android:text="2:30 PM"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_height="30dp"/>
+
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_width="210dp"
+                    android:text="Lunch"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/imgc1"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:src="@drawable/dotted"
+                android:layerType="software" />
+            <TextView
+                android:layout_width="135dp"
+                android:text="Day 3 "
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_height="30dp"/>
+            <ImageView
+                android:id="@+id/imgd1"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:src="@drawable/dotted"
+                android:layerType="software" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="135dp"
+                    android:text="Time "
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_height="30dp"/>
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:text="Activity"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_height="30dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="125dp"
+                    android:text="9:00 AM"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_height="30dp"/>
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:text="Breakfast"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_height="30dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="125dp"
+                    android:text="10:00 AM"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_height="30dp"/>
+
+                <TextView
+                    android:id="@+id/tv10"
+                    android:layout_width="210dp"
+                    android:text="Breakfast"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:paddingTop="10dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="180dp"
+                    android:text="Back"
+                    android:background="@drawable/red_button"
+                    android:textColor="@color/white"
+                    android:id="@+id/back"
+                    android:layout_marginBottom="3dp"></androidx.appcompat.widget.AppCompatButton>
+
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="90dp"
+                android:text="Give Ratings"
+                android:background="@drawable/rounded_signup"
+                android:textColor="@color/white"
+                android:id="@+id/rating"
+                android:layout_marginBottom="3dp"></androidx.appcompat.widget.AppCompatButton>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>
+</ScrollView>
